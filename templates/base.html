@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Github Repo Navigator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<nav>
+    <h1>Github Repo Navigator</h1>
+    {% if session.user %}
+        <a href="{{ url_for('logout') }}"><div class="button logout-button">Log Out</div></a>
+    {% else %}
+        <a href="{{ url_for('login') }}"><div class="button login-button">Log In</div></a>
+    {% endif %}
+</nav>
+<section class="content">
+    {% block content %}
+    {% endblock %}
+</section>
+</html>

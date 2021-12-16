@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if session.user %}
+        <div class="activation-code-container">
+            Hello, {{ session.user }}
+            <form method="post" action="/activation_code" class="activation-form">
+                <div>
+                    <input type="text" placeholder="Enter the activation code" name="activation_code">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    {% else %}
+        <div class="activation-code-container">
+            <h1>Welcome!</h1>
+            <p>Please Log In</p>
+        </div>
+
+    {% endif %}
+{% endblock %}

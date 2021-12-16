@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="repo-container">
+    {% for repo in repos %}
+        <div class="repo-card">
+            <h4><a href="{{ repo.url }}" target="_blank">{{ repo.name }}</a></h4>
+            <p><em>Owner: </em> {{ repo.owner }}</p>
+            <p><em>Stars: </em> {{ repo.stars }}</p>
+            <p><em># PRs: </em> {{ repo.pulls }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

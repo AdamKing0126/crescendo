@@ -1,0 +1,60 @@
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Helvetica', 'Arial', 'SansSerif';
+}
+
+.repo-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.repo-card {
+    background-color: #B0C4DE;
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+
+}
+
+.activation-code-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+    nav h1{
+        margin: 10px 0;
+    }
+
+    nav .button {
+        margin: 10px 0;
+    }
+
+    .button {
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+        width: 80px;
+    }
+
+    .button.login-button {
+        background-color: darkblue;
+        color: white;
+    }
+
+.button.logout-button {
+    background-color: lightblue;
+    color: darkblue;
+}
