@@ -28,7 +28,6 @@ github = oauth.register(
 
 @app.route('/')
 def index():
-    current_user = session.get('user')
     return render_template('index.html')
 
 
